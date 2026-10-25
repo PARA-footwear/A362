@@ -241,7 +241,7 @@
             <div class="price-wrap">
                 <div style="display: flex; flex-direction: column;">
                     <span class="price-old">3900 ₴</span>
-                    <span class="price-new">3375 ₴</span>
+                    <span class="price-new">3675 ₴</span>
                 </div>
                 <span class="in-stock">В наявності</span>
             </div>
@@ -357,7 +357,7 @@
     <div class="mobile-sticky-buy mobile-only">
         <div class="sticky-price">
             <span class="st-old">3900 ₴</span>
-            <span class="st-new">3375 ₴</span>
+            <span class="st-new">3675 ₴</span>
         </div>
         <button class="buy-btn" onclick="openOrderModal()">🛒 Купити</button>
     </div>
@@ -665,7 +665,7 @@
             <div><strong>Модель:</strong> Чоловічі черевики з натуральної шкіри</div>
             <div style="margin: 5px 0;"><strong>Колір:</strong> ${activeColorName}</div>
             <div><strong>Розмір:</strong> ${activeSize}</div>
-            <div style="margin-top: 10px; font-size: 18px; color: #d32f2f;"><strong>Сума:</strong> <span style="font-weight: 800;">3375 ₴</span></div>
+            <div style="margin-top: 10px; font-size: 18px; color: #d32f2f;"><strong>Сума:</strong> <span style="font-weight: 800;">3675 ₴</span></div>
         `;
 
         document.getElementById('mainForm').style.display = 'block';
@@ -811,7 +811,7 @@
             productName: "Чоловічі черевики з натуральної шкіри",
             colorName: activeColorName,
             size: activeSize,
-            price: "3375",
+            price: "3675",
             name: name,
             displayPhone: displayPhone,
             cleanPhone: cleanPhone,
@@ -831,7 +831,7 @@
             if (data.success) {
                 if (!data.isSpam) {
                     if(typeof fbq === 'function') fbq('track', 'Purchase', {
-                        value: Number('3375'), 
+                        value: Number('3675'), 
                         currency: 'UAH', 
                         content_name: 'Чоловічі черевики з натуральної шкіри ' + activeColorName
                     });
@@ -839,7 +839,7 @@
                     if(window.ttq) {
                         window.ttq.track('CompletePayment', {
                             content_type: 'product',
-                            value: Number('3375'),
+                            value: Number('3675'),
                             currency: 'UAH',
                             contents:[{
                                 content_id: 'para_item',
